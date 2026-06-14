@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>VoltGuard — IoT Transformer-Less Voltage Stabilizer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="index.html">
+    <span class="bolt" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>
+    </span>
+    <span>
+      <div class="name">VoltGuard</div>
+      <div class="tag">Smart Stabilizer</div>
+    </span>
+  </a>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#how">How it works</a>
+    <a href="#faqs">FAQs</a>
+    <a href="stabilizer-dashboard.html">Dashboard</a>
+  </nav>
+
+  <div class="nav-cta">
+    <a class="btn primary" href="stabilizer-dashboard.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>
+      <span class="label-text">Stabilize Voltage</span>
+    </a>
+    <button class="burger" id="burger" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<section class="wrap">
+  <div class="hero">
+    <div>
+      <span class="pill"><span class="dot"></span>SYSTEM READY · 50 Hz</span>
+      <h1>IoT-enabled, transformer-less voltage stabilization for <span class="accent">homes &amp; industry</span>.</h1>
+      <p class="lead">A transformer-less AC–AC voltage stabilizer that bucks a fluctuating high mains supply down to a clean, regulated output — with real-time IoT monitoring and instant over-voltage alerts.</p>
+      <div class="cta">
+        <a class="btn primary" href="stabilizer-dashboard.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          Open Live Dashboard
+        </a>
+        <a class="btn ghost" href="#about">Learn more</a>
+      </div>
+      <div class="stats">
+        <div class="s"><div class="n mono">220 V</div><div class="l">Regulated out</div></div>
+        <div class="s"><div class="n mono">~97%</div><div class="l">Efficiency</div></div>
+        <div class="s"><div class="n mono">0</div><div class="l">Transformers</div></div>
+      </div>
+    </div>
+
+    <div class="preview">
+      <div class="row">
+        <span class="eyebrow">Regulated Output</span>
+        <span class="badge">STABLE</span>
+      </div>
+      <div class="out mono">220<span class="u">V</span></div>
+      <div class="reg-labels mono" style="display:flex;justify-content:space-between;font-size:.66rem;color:var(--text-dim);margin-top:18px">
+        <span>mains in → regulated out</span><span>180–260 V</span>
+      </div>
+      <div class="ptrack">
+        <div class="pzone"></div>
+        <div class="pdot out"></div>
+        <div class="pdot in"></div>
+      </div>
+      <div class="peq" aria-hidden="true">
+        <span style="animation-delay:0s"></span><span style="animation-delay:.1s"></span><span style="animation-delay:.2s"></span>
+        <span style="animation-delay:.3s"></span><span style="animation-delay:.15s"></span><span style="animation-delay:.25s"></span>
+        <span style="animation-delay:.05s"></span><span style="animation-delay:.35s"></span><span style="animation-delay:.2s"></span>
+        <span style="animation-delay:.1s"></span><span style="animation-delay:.3s"></span><span style="animation-delay:.0s"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap section-pad" id="about">
+  <div class="sec-head reveal">
+    <span class="eyebrow">About the project</span>
+    <h2>What is a transformer-less voltage stabilizer?</h2>
+    <p>Traditional stabilizers rely on bulky iron-core transformers and relays. Our design uses fast power-electronic switching to regulate voltage directly — lighter, quieter, faster, and smarter.</p>
+  </div>
+  <div class="about-grid">
+    <div class="about-card reveal">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h4l3-9 4 18 3-9h4"/></svg></div>
+      <h3>Clean 220 V output</h3>
+      <p>Keeps a stable regulated output even when the incoming mains drifts well above the target.</p>
+    </div>
+    <div class="about-card hot reveal">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></div>
+      <h3>Over-voltage alerts</h3>
+      <p>Continuously watches the line and raises an instant alert the moment the supply crosses a safe limit.</p>
+    </div>
+    <div class="about-card reveal">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="10" rx="2"/><path d="M6 7V5M18 7V5M9 12h6"/></svg></div>
+      <h3>Compact &amp; light</h3>
+      <p>No heavy transformer core — four-quadrant bidirectional switches do the regulation instead.</p>
+    </div>
+    <div class="about-card reveal">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12a7 7 0 0 1 14 0M12 12l4-3M9 19h6"/></svg></div>
+      <h3>IoT monitoring</h3>
+      <p>Live readings of input, output, frequency, efficiency and load — viewable from anywhere.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap section-pad" id="how">
+  <div class="sec-head reveal">
+    <span class="eyebrow">Under the hood</span>
+    <h2>How the buck regulation works</h2>
+    <p>The converter samples the mains many times per cycle and switches just enough of it through to hold the output at your chosen target.</p>
+  </div>
+  <div class="steps">
+    <div class="step reveal"><h3>Sense</h3><p>The incoming AC voltage and frequency are measured continuously in real time.</p></div>
+    <div class="step reveal"><h3>Switch (PWM)</h3><p>High-frequency four-quadrant switching chops the input to the right effective level.</p></div>
+    <div class="step reveal"><h3>Filter (LC)</h3><p>An LC filter smooths the switched waveform back into a clean sine wave.</p></div>
+    <div class="step reveal"><h3>Regulate</h3><p>A feedback loop locks the output to the target and reports everything to the dashboard.</p></div>
+  </div>
+</section>
+
+<section class="wrap section-pad" id="faqs">
+  <div class="sec-head reveal">
+    <span class="eyebrow">FAQs</span>
+    <h2>Questions, Answered</h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq reveal">
+      <button>Why is it called a "buck" stabilizer?<span class="plus">+</span></button>
+      <div class="ans"><p>Because the mains supply is usually higher than the target. "Bucking" means stepping that voltage down to the regulated value (e.g. 220 V). The dashboard's regulation meter shows the input dot sitting above the output dot for exactly this reason.</p></div>
+    </div>
+    <div class="faq reveal">
+      <button>How is this different from a normal stabilizer?<span class="plus">+</span></button>
+      <div class="ans"><p>Conventional units use a tapped transformer plus relays, which are heavy and switch in coarse steps. This design is transformer-less and uses continuous power-electronic switching, giving smoother, faster and finer regulation in a much smaller package.</p></div>
+    </div>
+    <div class="faq reveal">
+      <button>Does it change the frequency?<span class="plus">+</span></button>
+      <div class="ans"><p>No. It regulates the voltage magnitude while preserving the 50 Hz line frequency. The dashboard shows the live frequency holding near 50 Hz.</p></div>
+    </div>
+    <div class="faq reveal">
+      <button>What happens during an over-voltage spike?<span class="plus">+</span></button>
+      <div class="ans"><p>The system flags it immediately — the input panel turns red and shows an over-voltage warning — while the regulation loop keeps the output pulled back toward the safe target.</p></div>
+    </div>
+    <div class="faq reveal">
+      <button>What does the IoT part do?<span class="plus">+</span></button>
+      <div class="ans"><p>It streams the live telemetry — input/output voltage, frequency, efficiency, THD and load — to the monitoring dashboard so the stabilizer can be watched and controlled remotely.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div class="name">VoltGuard</div>
+        <p>An IoT-enabled transformer-less AC voltage stabilizer.</p>
+      </div>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#how">How it works</a>
+        <a href="#faqs">FAQs</a>
+        <a href="stabilizer-dashboard.html">Dashboard</a>
+      </div>
+    </div>
+    <div class="copy">© 2026 VoltGuard · IoT-Enabled Transformer-Less Voltage Stabilizer · 50 Hz nominal</div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
