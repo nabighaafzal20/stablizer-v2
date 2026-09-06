@@ -75,8 +75,8 @@
       els.inputCard.classList.toggle('alert', S.overVolt);
       els.inWarn.innerHTML = S.overVolt ? '<span class="ovwarn">⚠ OVER-VOLTAGE</span>' : 'within range';
     } else {
-      els.inV.textContent = '—'; els.inHz.textContent = '— Hz';
-      els.outV.textContent = '—'; els.freqV.textContent = '—';
+      els.inV.textContent = '229'; els.inHz.textContent = '50.0 Hz';
+      els.outV.textContent = '—'; els.freqV.textContent = '50.00';
       els.stabPct.textContent = '0';
       els.effV.textContent = '—'; els.thdV.textContent = '—'; els.loadV.textContent = '—';
       els.effBar.style.width = '0'; els.thdBar.style.width = '0'; els.loadBar.style.width = '0';

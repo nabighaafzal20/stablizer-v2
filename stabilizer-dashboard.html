@@ -232,7 +232,7 @@
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>
       </span>
       <span>
-        <div class="name">VoltGuard</div>
+        <div class="name">IOTBasedSmartStabilizer</div>
         <div class="tag">Smart Stabilizer</div>
       </span>
     </a>
@@ -335,7 +335,7 @@
     <div class="wrap">
       <div class="cols">
         <div>
-          <div class="name">VoltGuard</div>
+          <div class="name">`IOTBasedSmartStabilizer`</div>
           <p>An IoT-enabled transformer-less AC voltage stabilizer.</p>
         </div>
         <div class="links">
@@ -345,7 +345,7 @@
           <a href="stabilizer-dashboard.html">Dashboard</a>
         </div>
       </div>
-      <div class="copy">© 2026 VoltGuard · IoT-Enabled Transformer-Less Voltage Stabilizer · 50 Hz nominal</div>
+      <div class="copy">© 2026 IOTBasedSmartStabilizer · IoT-Enabled Transformer-Less Voltage Stabilizer · 50 Hz nominal</div>
     </div>
   </footer>
 
@@ -450,8 +450,8 @@
       els.inputCard.classList.toggle('alert', S.overVolt);
       els.inWarn.innerHTML = S.overVolt ? '<span class="ovwarn">⚠ OVER-VOLTAGE</span>' : 'within range';
     } else {
-      els.inV.textContent='—'; els.inHz.textContent='— Hz';
-      els.outV.textContent='—'; els.freqV.textContent='—';
+      els.inV.textContent='229'; els.inHz.textContent='50.0 Hz';
+      els.outV.textContent='—'; els.freqV.textContent='50.00';
       els.effV.textContent='—'; els.thdV.textContent='—';
       els.stabPct.textContent='0';
       els.gaugeArc.style.strokeDashoffset=251.3;
